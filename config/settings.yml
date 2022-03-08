@@ -6,3 +6,11 @@ outside_href:
   learn_enough: https://learnenough.com/
   rails_tutorial_book: https://www.railstutorial.org/book
   rails_tutorial_screencasts: "https://screencasts.railstutorial.org"
+
+validations:
+  length:
+    mail_max: 50
+    name_max: 255
+    password_min: 6
+  regrex:
+    mail: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

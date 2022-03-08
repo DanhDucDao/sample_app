@@ -63,8 +63,18 @@ en:
   users:
     new:
       title: "Sign up"
-      name: "Sign up"
+      page_name: "Sign up"
       des: "This will be a sign up page for new users."
+      sign_up_btn: "Create my account"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirm password"
+    create:
+      success: "Welcome to sample app"
+      foul_detection: "Foul! Something wrong with your info."
+    show:
+      not_found: "Correspond user not found! Wanna register?"
   layouts:
     header:
       home: "Home"
@@ -75,3 +85,7 @@ en:
       about: "About"
       contact: "Contact"
       news: "News"
+  shared:
+    error_messages:
+      form_des: "This form contains"
+      foul: "foul"

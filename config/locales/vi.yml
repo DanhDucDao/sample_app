@@ -30,8 +30,18 @@ vi:
   users:
     new:
       title: "Đăng ký"
-      name: "Đăng ký"
+      page_name: "Đăng ký"
       des: "Đây sẽ là trang đăng ký cho người dùng mới."
+      sign_up_btn: "Tạo tại khoản"
+      name: "Họ tên"
+      email: "Thư điện tử"
+      password: "Mật khẩu"
+      password_confirmation: "Nhập lại mật khẩu"
+    create:
+      success: "Chào mừng đến với sample app"
+      foul_detection: "Thông tin bạn nhập không hợp hệ!"
+    show:
+      not_found: "Không tìm thấy người dùng. Đăng ký?"
   layouts:
     header:
       home: "Trang chủ"
@@ -42,3 +52,7 @@ vi:
       about: "Về chúng tôi"
       contact: "Liên hệ"
       news: "Tin tức"
+  shared:
+    error_messages:
+      form_des: "Form chứa"
+      foul: "lỗi"

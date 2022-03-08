@@ -14,3 +14,8 @@ validations:
     password_min: 6
   regrex:
     mail: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+gravatar:
+  base_url: "https://www.gravatar.com/avatar"
+  size:
+    default: 80
+    large: 200

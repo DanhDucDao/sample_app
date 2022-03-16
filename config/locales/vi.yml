@@ -1,0 +1,44 @@
+vi:
+  hello: "Hello world"
+  base_title: "Hướng dẫn Ruby sample app"
+  static_pages:
+    home:
+      title: "Trang chủ"
+      name: "Trang chủ"
+      welcome: "Chào mừng đến với ứng dụng mẫu"
+      sign_up_now: "Đăng ký ngay!"
+      description1_1: "Đây là trang chủ của"
+      description1_2: ""
+    about:
+      title: "Về chúng tôi"
+      name: "Về chúng tôi"
+      part_of_the: "Một phần của"
+      learn_enough: "Learn enough"
+      book: "sách"
+      screencast: "screencast series"
+      des1: "dạy phát triển ứng dụng web với"
+      des2: "Đây là một ứng dụng mẫu cho hướng dẫn"
+    contact:
+      title: "Liên hệ"
+      name: "Liên hệ"
+      des: "Liên hệ Ruby on Rails Tutorial tại"
+      page: "trang liên hệ."
+    help:
+      title: "Hỗ trợ"
+      name: "Hỗ trợ"
+      des: "Liên hệ trợ giúp Ruby on Rails Tutorial tại"
+  users:
+    new:
+      title: "Đăng ký"
+      name: "Đăng ký"
+      des: "Đây sẽ là trang đăng ký cho người dùng mới."
+  layouts:
+    header:
+      home: "Trang chủ"
+      help: "Hỗ trợ"
+      log_in: "Đăng nhập"
+    footer:
+      author: "Michael Harlt"
+      about: "Về chúng tôi"
+      contact: "Liên hệ"
+      news: "Tin tức"

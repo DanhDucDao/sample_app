@@ -18,5 +18,9 @@ module SampleApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Config I18n to load language files
+    config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**", "*.{rb, yml}")]
+    config.i18n.default_locale = :en
   end
 end

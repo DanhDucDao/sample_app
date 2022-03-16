@@ -63,3 +63,10 @@ build-iPhoneSimulator/
 #framgia
 .framgia-ci-reports/
 .framgia-ci-result.temp.yml
+
+# development log
+/log/development.log
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

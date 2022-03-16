@@ -14,6 +14,7 @@ gem "bootsnap", require: false
 gem "bootstrap-sass", "~>3.4.1"
 gem "rails-i18n"
 gem "config"
+gem "bcrypt", "~>3.1.13"
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end

@@ -103,5 +103,6 @@ en:
       submit: "Sign in"
       newuser: "New user?"
       signup_now: "Sign up now"
+      remember_me: "Remember me on this computer"
     create:
       invalid: "Invalid Email address or password"

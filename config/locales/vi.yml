@@ -47,6 +47,11 @@ vi:
       home: "Trang chủ"
       help: "Hỗ trợ"
       log_in: "Đăng nhập"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
     footer:
       author: "Michael Harlt"
       about: "Về chúng tôi"
@@ -56,3 +61,13 @@ vi:
     error_messages:
       form_des: "Form chứa"
       foul: "lỗi"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      page_name: "Đăng nhập"
+      password: "Mật khẩu"
+      submit: "Đăng nhập"
+      newuser: "Chưa có tài khoản"
+      signup_now: "Đăng ký ngay"
+    create:
+      invalid: "Mật khẩu hoặc email không chính xác"

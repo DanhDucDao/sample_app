@@ -80,6 +80,11 @@ en:
       home: "Home"
       help: "Help"
       log_in: "Log in"
+      users: "User"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
     footer:
       author: "Michael Harlt"
       about: "About"
@@ -89,3 +94,14 @@ en:
     error_messages:
       form_des: "This form contains"
       foul: "foul"
+  sessions:
+    new:
+      title: "Sign in"
+      page_name: "Sign in"
+      email: "Email"
+      password: "Password"
+      submit: "Sign in"
+      newuser: "New user?"
+      signup_now: "Sign up now"
+    create:
+      invalid: "Invalid Email address or password"

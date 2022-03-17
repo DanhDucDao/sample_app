@@ -17,6 +17,7 @@ class UsersController < ApplicationController
       flash[:success] = t(".success")
       redirect_to @user
     else
+      log_in @user
       flash[:danger] = t(".foul_detection")
       render :new, status: :unprocessable_entity
     end

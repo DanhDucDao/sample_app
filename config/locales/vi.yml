@@ -28,6 +28,10 @@ vi:
       name: "Hỗ trợ"
       des: "Liên hệ trợ giúp Ruby on Rails Tutorial tại"
   users:
+    index:
+      title: "Tất cả người dùng"
+      name: "Tất cả người dùng"
+      please_log_in: "Bạn phải đăng nhập để xem người dùng"
     new:
       title: "Đăng ký"
       page_name: "Đăng ký"
@@ -42,6 +46,30 @@ vi:
       foul_detection: "Thông tin bạn nhập không hợp hệ!"
     show:
       not_found: "Không tìm thấy người dùng. Đăng ký?"
+      user_not_found: "Không tìm thấy người dùng. Đăng ký?"
+    edit:
+      title: "Sửa thông tin"
+      page_name: "Sửa thông tin"
+      des: "Đây sẽ là trang đăng ký cho người dùng mới."
+      edit_btn: "Lưu thay đổi"
+      name: "Họ tên"
+      email: "Thư điện tử"
+      password: "Mật khẩu"
+      password_confirmation: "Nhập lại mật khẩu"
+      change_avatar: "Đổi ảnh đại diện"
+      please_log_in: "Đăng nhập để tiếp tục."
+      user_not_found: "người dùng không tồn tại"
+    update:
+      please_log_in: "Đăng nhập để tiếp tục"
+      profile_updated: "Cập nhật thành công"
+      user_not_found: "Người dùng không tồn tại"
+    user:
+      you_sure: "Bạn chắc chưa?"
+      delete: "Xóa"
+    destroy:
+      user_deleted: "User đã bị xóa"
+      user_not_fout: "Người dùng không tồn tại."
+      fail_to_delete: "Có lỗi xảy ra khi xóa người dùng."
   layouts:
     header:
       home: "Trang chủ"

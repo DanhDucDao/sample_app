@@ -61,6 +61,10 @@ en:
       name: "Help"
       des: "Get help on the Ruby on Rails Tutorial at the"
   users:
+    index:
+      title: "All Users"
+      name: "All Users"
+      please_log_in: "Log in to see all users"
     new:
       title: "Sign up"
       page_name: "Sign up"
@@ -75,6 +79,30 @@ en:
       foul_detection: "Foul! Something wrong with your info."
     show:
       not_found: "Correspond user not found! Wanna register?"
+      user_not_found: "Correspond user not found! Wanna register?"
+    edit:
+      title: "Edit User"
+      page_name: "Edit User"
+      des: "This will be a sign up page for new users."
+      edit_btn: "Save Changes"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Confirm password"
+      change_avatar: "Change Avatar"
+      please_log_in: "Please Log in!"
+      user_not_found: "User Not Found"
+    update:
+      please_log_in: "Please Log in!"
+      profile_updated: "Profile Updated!"
+      user_not_found: "User Not Found"
+    user:
+      you_sure: "You sure?"
+      delete: "Delete"
+    destroy:
+      user_deleted: "User Deleted!"
+      user_not_found: "User Not Found"
+      fail_to_delete: "Can not delete this user!"
   layouts:
     header:
       home: "Home"

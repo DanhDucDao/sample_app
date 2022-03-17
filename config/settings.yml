@@ -16,6 +16,8 @@ validations:
     mail: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/'
 gravatar:
   base_url: "https://www.gravatar.com/avatar"
+  email_url: "https://www.gravatar.com/email"
   size:
-    default: 80
+    default: 200
     large: 200
+    index: 50

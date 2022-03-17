@@ -66,6 +66,7 @@ build-iPhoneSimulator/
 
 # development log
 /log/development.log
+/log/environment.log
 
 config/settings.local.yml
 config/settings/*.local.yml

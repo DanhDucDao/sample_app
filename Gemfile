@@ -18,6 +18,8 @@ gem "rails-i18n"
 gem "config"
 gem "byebug"
 gem "bcrypt", "~>3.1.13"
+gem "faker"
+gem "pagy"
 group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end

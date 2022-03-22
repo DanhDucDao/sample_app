@@ -69,5 +69,6 @@ vi:
       submit: "Đăng nhập"
       newuser: "Chưa có tài khoản"
       signup_now: "Đăng ký ngay"
+      remember_me: "Lưu mật khẩu vào trình duyệt này"
     create:
       invalid: "Mật khẩu hoặc email không chính xác"

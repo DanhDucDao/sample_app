@@ -13,7 +13,7 @@ validations:
     name_max: 255
     password_min: 6
   regrex:
-    mail: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+    mail: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/'
 gravatar:
   base_url: "https://www.gravatar.com/avatar"
   size:

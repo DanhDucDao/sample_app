@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(new show create)
+  before_action :active_user, except: %i(new show create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: %i(destroy)
   before_action :user_existence, except: %i(index new create)
 
   def index
-    @pagy, @users = pagy User.all_ordered_by_name
+    @pagy, @users = pagy User.activated.ordered_by_name
   end
 
   def new
@@ -17,11 +18,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t ".success"
-      log_in @user
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".please_check_email"
+      redirect_to root_url
     else
-      log_in @user
       flash[:danger] = t ".foul_detection"
       render :new, status: :unprocessable_entity
     end
@@ -60,6 +60,13 @@ class UsersController < ApplicationController
     store_location
     flash[:danger] = t ".please_log_in"
     redirect_to login_url
+  end
+
+  def active_user
+    return if current_user.activated?
+
+    flash[:info] = t ".activation_warning"
+    redirect_to root_url
   end
 
   def correct_user

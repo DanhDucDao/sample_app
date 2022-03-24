@@ -65,11 +65,13 @@ en:
       title: "All Users"
       name: "All Users"
       please_log_in: "Log in to see all users"
+      activation_warning: "Please verify your account"
     new:
       title: "Sign up"
       page_name: "Sign up"
       des: "This will be a sign up page for new users."
       sign_up_btn: "Create my account"
+    form:
       name: "Name"
       email: "Email"
       password: "Password"
@@ -77,6 +79,7 @@ en:
     create:
       success: "Welcome to sample app"
       foul_detection: "Foul! Something wrong with your info."
+      please_check_email: "Please check your email to activate your account"
     show:
       not_found: "Correspond user not found! Wanna register?"
       user_not_found: "Correspond user not found! Wanna register?"
@@ -92,10 +95,12 @@ en:
       change_avatar: "Change Avatar"
       please_log_in: "Please Log in!"
       user_not_found: "User Not Found"
+      activation_warning: "Please verify your account"
     update:
       please_log_in: "Please Log in!"
       profile_updated: "Profile Updated!"
       user_not_found: "User Not Found"
+      activation_warning: "Please verify your account"
     user:
       you_sure: "You sure?"
       delete: "Delete"
@@ -103,6 +108,7 @@ en:
       user_deleted: "User Deleted!"
       user_not_found: "User Not Found"
       fail_to_delete: "Can not delete this user!"
+      activation_warning: "Please verify your account"
   layouts:
     header:
       home: "Home"
@@ -134,3 +140,17 @@ en:
       remember_me: "Remember me on this computer"
     create:
       invalid: "Invalid Email address or password"
+      activation_warning: "Account not activated
+                            Check your email for the activation link."
+  user_mailer:
+    account_activation:
+      hi: "Hi %{name}"
+      welcome_message: "Welcome to the Sample App! Click on the link below
+                        to activate your accout:"
+      sample_app: "Sample App"
+      activate: "Activate"
+  account_activations:
+    edit:
+      account_activated: "Account Activated!"
+      invalid_activation_link: "Invalid Activation Link"
+      user_not_found: "User not found"

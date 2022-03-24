@@ -9,6 +9,9 @@
 User.create!(name: "Dao Duc Danh",
               email: "tranhiep0309@gmail.com",
               password: "foobar",
+              admin: true,
+              activated: true,
+              activated_at: Time.zone.now,
               password_confirmation: "foobar")
 
 
@@ -19,5 +22,7 @@ User.create!(name: "Dao Duc Danh",
   User.create!(name: name,
                 email: email,
                 password: password,
+                activated: true,
+                activated_at: Time.zone.now,
                 password_confirmation: password)
 end

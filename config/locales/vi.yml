@@ -32,11 +32,13 @@ vi:
       title: "Tất cả người dùng"
       name: "Tất cả người dùng"
       please_log_in: "Bạn phải đăng nhập để xem người dùng"
+      activation_warning: "Xác nhận tài khoản của bạn đi!"
     new:
       title: "Đăng ký"
       page_name: "Đăng ký"
       des: "Đây sẽ là trang đăng ký cho người dùng mới."
       sign_up_btn: "Tạo tại khoản"
+    form:
       name: "Họ tên"
       email: "Thư điện tử"
       password: "Mật khẩu"
@@ -44,6 +46,7 @@ vi:
     create:
       success: "Chào mừng đến với sample app"
       foul_detection: "Thông tin bạn nhập không hợp hệ!"
+      please_check_email: "Làm ơn kiểm tra email để kích hoạt tài khoản"
     show:
       not_found: "Không tìm thấy người dùng. Đăng ký?"
       user_not_found: "Không tìm thấy người dùng. Đăng ký?"
@@ -59,10 +62,12 @@ vi:
       change_avatar: "Đổi ảnh đại diện"
       please_log_in: "Đăng nhập để tiếp tục."
       user_not_found: "người dùng không tồn tại"
+      activation_warning: "Xác nhận tài khoản của bạn đi!"
     update:
       please_log_in: "Đăng nhập để tiếp tục"
       profile_updated: "Cập nhật thành công"
       user_not_found: "Người dùng không tồn tại"
+      activation_warning: "Xác nhận tài khoản của bạn đi!"
     user:
       you_sure: "Bạn chắc chưa?"
       delete: "Xóa"
@@ -70,6 +75,7 @@ vi:
       user_deleted: "User đã bị xóa"
       user_not_fout: "Người dùng không tồn tại."
       fail_to_delete: "Có lỗi xảy ra khi xóa người dùng."
+      activation_warning: "Xác nhận tài khoản của bạn đi!"
   layouts:
     header:
       home: "Trang chủ"
@@ -99,4 +105,17 @@ vi:
       signup_now: "Đăng ký ngay"
       remember_me: "Lưu mật khẩu vào trình duyệt này"
     create:
+      activation_warning: "Tài khoản chưa kích hoạt, vui lòng kiểm tra email của bạn"
       invalid: "Mật khẩu hoặc email không chính xác"
+  user_mailer:
+    account_activation:
+      hi: "Xin chào %{name},"
+      welcome_message: "Chào mừng đến với Ứng dụng
+                      mẫu! Nhấn vào liên kết bên dưới để kích hoạt tài khoản"
+      sample_app: "Ứng dụng mẫu"
+      activate: "Kích hoạt"
+  account_activations:
+    edit:
+      invalid_activation_link: "Liên kết không hợp lệ"
+      account_activated: "Tài khoản đã được xác nhận"
+      user_not_found: "Tài khoản không tồn tại!"

@@ -12,7 +12,8 @@ class User < ApplicationRecord
   has_secure_password
 
   validates :password, presence: true,
-                    length: {minimum: Settings.validations.length.password_min}
+                    length: {minimum: Settings.validations.length.password_min},
+                    allow_nil: true
 
   def remember
     @remember_token = User.new_token
@@ -29,18 +30,22 @@ class User < ApplicationRecord
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
   end
 
-  def self.digest string
-    cost =  if ActiveModel::SecurePassword.min_cost
-              BCrypt::Engine::MIN_COST
-            else
-              BCrypt::Engine.cost
-            end
-    BCrypt::Password.create string, cost: cost
+  class << self
+    def digest string
+      cost = if ActiveModel::SecurePassword.min_cost
+               BCrypt::Engine::MIN_COST
+             else
+               BCrypt::Engine.cost
+             end
+      BCrypt::Password.create string, cost: cost
+    end
+
+    def new_token
+      SecureRandom.urlsafe_base64
+    end
   end
 
-  def self.new_token
-    SecureRandom.urlsafe_base64
-  end
+  scope :all_ordered_by_name, ->{order(name: :asc)}
 
   private
 

@@ -138,6 +138,7 @@ en:
       newuser: "New user?"
       signup_now: "Sign up now"
       remember_me: "Remember me on this computer"
+      forgot_password: "(forgot password)"
     create:
       invalid: "Invalid Email address or password"
       activation_warning: "Account not activated
@@ -149,8 +150,37 @@ en:
                         to activate your accout:"
       sample_app: "Sample App"
       activate: "Activate"
+    password_reset:
+      title: "Password Reset"
+      reset: "Password Reset"
+      hi: "Hi %{name}"
+      to_reset: "To reset your password click the link below:"
+      expire: "This link will expire in two hours."
+      warn: "If you did not request your password to be reset, please ignore this
+              email and your password will stay as it is."
   account_activations:
     edit:
       account_activated: "Account Activated!"
       invalid_activation_link: "Invalid Activation Link"
       user_not_found: "User not found"
+  password_resets:
+    new:
+      title: "Forgot Password"
+      page_name: "Forgot Password"
+      email: "Email"
+      submit: "Submit"
+    create:
+      email_sent_message: "Email sent with password reset instructions"
+      not_found: "Email address not found!"
+    edit:
+      title: "Reset Password"
+      page_name: "Reset Password"
+      password: "Password"
+      confirmation: "Confirm Password"
+      update: "Update Password"
+      password_expire: "Password reset has been expired"
+      not_found: "User not found!"
+    update:
+      password_expire: "Password reset has been expired"
+      not_empty: "can't be empty"
+      reset_success: "Your password has been reset"

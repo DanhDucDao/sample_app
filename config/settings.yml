@@ -21,3 +21,6 @@ gravatar:
     default: 200
     large: 200
     index: 50
+password:
+  reset:
+    expire_hour: 2

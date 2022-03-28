@@ -4,7 +4,11 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by email: to_down_case(params[:session][:email])
     if user&.authenticate(params[:session][:password])
-      accept_user user
+      if user.activated?
+        accept_user user
+      else
+        warn_activation
+      end
     else
       flash.now[:danger] = t ".invalid"
       render :new, status: :unprocessable_entity
@@ -25,5 +29,10 @@ class SessionsController < ApplicationController
     log_in user
     params[:session][:remember_me] == "1" ? remember(user) : forget(user)
     redirect_back_or user
+  end
+
+  def warn_activation
+    flash[:warning] = t ".activation_warning"
+    redirect_to root_url
   end
 end

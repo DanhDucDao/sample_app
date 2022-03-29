@@ -104,6 +104,7 @@ vi:
       newuser: "Chưa có tài khoản"
       signup_now: "Đăng ký ngay"
       remember_me: "Lưu mật khẩu vào trình duyệt này"
+      forgot_password: "(Quên mật khẩu)"
     create:
       activation_warning: "Tài khoản chưa kích hoạt, vui lòng kiểm tra email của bạn"
       invalid: "Mật khẩu hoặc email không chính xác"
@@ -114,8 +115,37 @@ vi:
                       mẫu! Nhấn vào liên kết bên dưới để kích hoạt tài khoản"
       sample_app: "Ứng dụng mẫu"
       activate: "Kích hoạt"
+    password_reset:
+      title: "Đặt lại mật khẩu"
+      reset: "Đặt lại mật khẩu"
+      hi: "Xin chào %{name}"
+      to_reset: "Để cài lại mật khẩu, hãy click vào liên kết bên dưới:"
+      expire: "Liên kết này sẽ hết hạn trong hai giờ."
+      warn: "Nếu bạn không yêu cầu đặt lại mật khẩu, hãy bỏ qua thư này,
+              Mật khẩu của bạn sẽ giữ nguyên như cũ."
   account_activations:
     edit:
       invalid_activation_link: "Liên kết không hợp lệ"
       account_activated: "Tài khoản đã được xác nhận"
       user_not_found: "Tài khoản không tồn tại!"
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      page_name: "Quên mật khẩu"
+      email: "Thư điện tử"
+      submit: "Xác nhận"
+    create:
+      email_sent_message: "Đã gửi email hướng dẫn đổi mật khẩu."
+      not_found: "Không tìm thấy địa chỉ email này."
+    edit:
+      title: "Đặt lại mật khẩu"
+      page_name: "Đặt lại mật khẩu"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+      update: "Cập nhập mật khẩu"
+      password_expire: "Hết hạn đặt lại mật khẩu"
+      not_found: "Không tìm thấy người dùng"
+    update:
+      password_expire: "Hết hạn đặt lại mật khẩu"
+      not_empty: "Mật khẩu không thể để trống"
+      reset_success: "Mật khẩu đã được đặt lại"
